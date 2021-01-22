@@ -1,4 +1,4 @@
-# Sistema de constancias
+# Sistema de Quejas y Sugerencias Codeigniter
 
 Portada 
 ![alt text](portada_sistema_de_quejas_ym.jpg)
