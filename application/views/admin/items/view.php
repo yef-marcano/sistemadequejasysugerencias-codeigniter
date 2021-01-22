@@ -6,19 +6,19 @@
 
 	<div class="col-sm-4">
 
-		<h2>Administrar Mensajes</h2>
+		<h2>Quejas y Sugerencias</h2>
 
 		<ol class="breadcrumb">
 
 			<li>
 
-				<a href="<?php echo base_url() . 'admin/' ?>">Dashboard</a>
+				<a href="<?php echo base_url() . 'admin/' ?>">Inicio</a>
 
 			</li>
 
 			<li class="active">
 
-				<strong>Items</strong>
+				<strong>Administrar Mensajes</strong>
 
 			</li>
 
@@ -288,7 +288,7 @@
 
 
 								<tr>
-									<td colspan="2"><a type="reset" class="btn btn-info pull-right" onclick="history.back()">Back</a></td>
+									<td colspan="2"><a type="reset" class="btn btn-info pull-right" onclick="history.back()">Volver</a></td>
 								</tr>
 							</table>
 
