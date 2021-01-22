@@ -6,7 +6,7 @@
 
 	<div class="col-sm-4">
 
-		<h2>Items</h2>
+		<h2>Administrar Mensajes</h2>
 
 		<ol class="breadcrumb">
 
@@ -164,13 +164,13 @@
 
 
 
-										<span style="margin-left:5px;"><?php echo in_array("Pregunta", $arr) ? 'Pregunta, ' : ""; ?></span>
+										<span style="margin-left:5px;"><?php echo in_array("Pregunta", $arr) ? 'Pregunta' : ""; ?></span>
 
-										<span style="margin-left:5px;"><?php echo in_array("Reclamo", $arr) ? 'Reclamo, ' : ""; ?></span>
+										<span style="margin-left:5px;"><?php echo in_array("Reclamo", $arr) ? 'Reclamo' : ""; ?></span>
 
-										<span style="margin-left:5px;"><?php echo in_array("Felicitación", $arr) ? 'Felicitación, ' : ""; ?></span>
+										<span style="margin-left:5px;"><?php echo in_array("Felicitación", $arr) ? 'Felicitación' : ""; ?></span>
 
-										<span style="margin-left:5px;"><?php echo in_array("Duda", $arr) ? 'Duda, ' : ""; ?></span>
+										<span style="margin-left:5px;"><?php echo in_array("Duda", $arr) ? 'Duda' : ""; ?></span>
 
 									</td>
 
@@ -235,7 +235,7 @@
 
 									<td>
 
-										<label for="creado_fecha" class="col-sm-3 control-label"> Creado_fecha </label>
+										<label for="creado_fecha" class="col-sm-3 control-label"> Fecha </label>
 
 									</td>
 
@@ -255,7 +255,7 @@
 
 									<td>
 
-										<label class="control-label col-md-3"> Departamento_id </label>
+										<label class="control-label col-md-3"> Departamento </label>
 
 									</td>
 
