@@ -4,19 +4,19 @@
 
   <div class="col-sm-4">
 
-    <h2>Users</h2>
+    <h2>Usuarios</h2>
 
     <ol class="breadcrumb">
 
       <li>
 
-        <a href="<?php echo base_url().'admin/'?>">Dashboard</a>
+        <a href="<?php echo base_url().'admin/'?>">Inicio</a>
 
       </li>
 
       <li class="active">
 
-        <strong>Users</strong>
+        <strong>Usuarios</strong>
 
       </li>
 

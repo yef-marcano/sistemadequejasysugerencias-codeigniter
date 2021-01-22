@@ -1,313 +1,313 @@
-<?php $this->load->view('header'); ?>
-<!--  BO :heading -->
-<div class="row wrapper border-bottom white-bg page-heading">
-  <div class="col-sm-4">
-    <h2>Users</h2>
-    <ol class="breadcrumb">
-      <li>
-        <a href="<?php echo base_url().'admin/'?>">Dashboard</a>
-      </li>
-      <li class="active">
-        <strong>Users</strong>
-      </li>
-    </ol>
-  </div>
-  <div class="col-sm-8">
-    <div class="title-action">
-    </div>
-  </div>
-</div>
-<!--  EO :heading -->
-<div class="row">
-  <div class="wrapper wrapper-content animated fadeInRight">
-    <div class="ibox ">
-      <div class="ibox-title" >
-        <h5>Add <small></small></h5>
-        <div class="ibox-tools">                           
-        </div>
-      </div>
-      <!-- ............................................................. -->
-      <!-- BO : content  -->
-      <div class="col-sm-12 white-bg ">
-        <div class="box box-info">
-          <div class="box-header with-border">
-            <h3 class="box-title">  </h3>
-          </div>
-          <!-- /.box-header -->
-          <!-- form start -->
-          <form action="" id="" class="form-horizontal " method="post" enctype="multipart/form-data">
-          <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
-            <div class="box-body">
-              <?php if($this->session->flashdata('message')): ?>
-              <div class="alert alert-success">
-                <button type="button" class="close" data-close="alert"></button>
-                <?php echo $this->session->flashdata('message'); ?>
-              </div>
-              <?php endif; ?> 
-              
+<?php $this->load->view('header'); ?>
 
+<!--  BO :heading -->
 
+<div class="row wrapper border-bottom white-bg page-heading">
 
+	<div class="col-sm-4">
 
+		<h2>Users</h2>
 
-	<!-- Password Start -->
+		<ol class="breadcrumb">
 
-	<div class="form-group">
+			<li>
 
-	  <label for="password" class="col-sm-3 control-label"> Password </label>
+				<a href="<?php echo base_url() . 'admin/' ?>">Dashboard</a>
 
-	  <div class="col-sm-4">
+			</li>
 
-	    <input type="text" class="form-control" id="password" name="password" 
+			<li class="active">
 
-	    
+				<strong>Users</strong>
 
-	    value="<?php echo set_value("password"); ?>"
+			</li>
 
-	    >
+		</ol>
 
-	  </div>
+	</div>
 
-	  <div class="col-sm-5" >
+	<div class="col-sm-8">
 
-	 
+		<div class="title-action">
 
-	    <?php echo form_error("password","<span class='label label-danger'>","</span>")?>
+		</div>
 
-	  </div>
+	</div>
 
-	</div> 
+</div>
 
-	<!-- Password End -->
+<!--  EO :heading -->
 
+<div class="row">
 
+	<div class="wrapper wrapper-content animated fadeInRight">
 
+		<div class="ibox ">
 
+			<div class="ibox-title">
 
-	
+				<h5>Agregar <small></small></h5>
 
+				<div class="ibox-tools">
 
+				</div>
 
+			</div>
 
+			<!-- ............................................................. -->
 
-	<!-- Email Start -->
+			<!-- BO : content  -->
 
-	<div class="form-group">
+			<div class="col-sm-12 white-bg ">
 
-	  <label for="email" class="col-sm-3 control-label"> Email </label>
+				<div class="box box-info">
 
-	  <div class="col-sm-4">
+					<div class="box-header with-border">
 
-	    <input type="text" class="form-control" id="email" name="email" 
+						<h3 class="box-title"> </h3>
 
-	    
+					</div>
 
-	    value="<?php echo set_value("email"); ?>"
+					<!-- /.box-header -->
 
-	    >
+					<!-- form start -->
 
-	  </div>
+					<form action="" id="" class="form-horizontal " method="post" enctype="multipart/form-data">
 
-	  <div class="col-sm-5" >
+						<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 
-	 
+						<div class="box-body">
 
-	    <?php echo form_error("email","<span class='label label-danger'>","</span>")?>
+							<?php if ($this->session->flashdata('message')) : ?>
 
-	  </div>
+								<div class="alert alert-success">
 
-	</div> 
+									<button type="button" class="close" data-close="alert"></button>
 
-	<!-- Email End -->
+									<?php echo $this->session->flashdata('message'); ?>
 
+								</div>
 
+							<?php endif; ?>
 
 
+							<!-- Password Start -->
 
-	
+							<div class="form-group">
 
+								<label for="password" class="col-sm-3 control-label"> Contraseña </label>
 
+								<div class="col-sm-4">
 
+									<input type="text" class="form-control" id="password" name="password" value="<?php echo set_value("password"); ?>">
 
+								</div>
 
-	<!-- First_name Start -->
+								<div class="col-sm-5">
 
-	<div class="form-group">
 
-	  <label for="first_name" class="col-sm-3 control-label"> First_name </label>
 
-	  <div class="col-sm-4">
+									<?php echo form_error("password", "<span class='label label-danger'>", "</span>") ?>
 
-	    <input type="text" class="form-control" id="first_name" name="first_name" 
+								</div>
 
-	    
+							</div>
 
-	    value="<?php echo set_value("first_name"); ?>"
+							<!-- Password End -->
 
-	    >
 
-	  </div>
 
-	  <div class="col-sm-5" >
+							<!-- Email Start -->
 
-	 
+							<div class="form-group">
 
-	    <?php echo form_error("first_name","<span class='label label-danger'>","</span>")?>
+								<label for="email" class="col-sm-3 control-label"> Correo Electronico </label>
 
-	  </div>
+								<div class="col-sm-4">
 
-	</div> 
+									<input type="text" class="form-control" id="email" name="email" value="<?php echo set_value("email"); ?>">
 
-	<!-- First_name End -->
+								</div>
 
+								<div class="col-sm-5">
 
 
 
+									<?php echo form_error("email", "<span class='label label-danger'>", "</span>") ?>
 
-	
+								</div>
 
+							</div>
 
+							<!-- Email End -->
 
 
+							<!-- First_name Start -->
 
-	<!-- Last_name Start -->
+							<div class="form-group">
 
-	<div class="form-group">
+								<label for="first_name" class="col-sm-3 control-label"> Nombre </label>
 
-	  <label for="last_name" class="col-sm-3 control-label"> Last_name </label>
+								<div class="col-sm-4">
 
-	  <div class="col-sm-4">
+									<input type="text" class="form-control" id="first_name" name="first_name" value="<?php echo set_value("first_name"); ?>">
 
-	    <input type="text" class="form-control" id="last_name" name="last_name" 
+								</div>
 
-	    
+								<div class="col-sm-5">
 
-	    value="<?php echo set_value("last_name"); ?>"
 
-	    >
 
-	  </div>
+									<?php echo form_error("first_name", "<span class='label label-danger'>", "</span>") ?>
 
-	  <div class="col-sm-5" >
+								</div>
 
-	 
+							</div>
 
-	    <?php echo form_error("last_name","<span class='label label-danger'>","</span>")?>
+							<!-- First_name End -->
 
-	  </div>
 
-	</div> 
 
-	<!-- Last_name End -->
 
+							<!-- Last_name Start -->
 
+							<div class="form-group">
 
+								<label for="last_name" class="col-sm-3 control-label"> Apellido </label>
 
+								<div class="col-sm-4">
 
-	
+									<input type="text" class="form-control" id="last_name" name="last_name" value="<?php echo set_value("last_name"); ?>">
 
+								</div>
 
+								<div class="col-sm-5">
 
 
 
-	<!-- Company Start -->
+									<?php echo form_error("last_name", "<span class='label label-danger'>", "</span>") ?>
 
-	<div class="form-group">
+								</div>
 
-	  <label for="company" class="col-sm-3 control-label"> Company </label>
+							</div>
 
-	  <div class="col-sm-4">
+							<!-- Last_name End -->
 
-	    <input type="text" class="form-control" id="company" name="company" 
 
-	    
 
-	    value="<?php echo set_value("company"); ?>"
 
-	    >
+							<!-- Company Start -->
 
-	  </div>
+							<div class="form-group">
 
-	  <div class="col-sm-5" >
+								<label for="company" class="col-sm-3 control-label"> Compañia </label>
 
-	 
+								<div class="col-sm-4">
 
-	    <?php echo form_error("company","<span class='label label-danger'>","</span>")?>
+									<input type="text" class="form-control" id="company" name="company" value="<?php echo set_value("company"); ?>">
 
-	  </div>
+								</div>
 
-	</div> 
+								<div class="col-sm-5">
 
-	<!-- Company End -->
 
 
+									<?php echo form_error("company", "<span class='label label-danger'>", "</span>") ?>
 
+								</div>
 
+							</div>
 
-	
+							<!-- Company End -->
 
 
 
 
 
-	<!-- Phone Start -->
 
-	<div class="form-group">
 
-	  <label for="phone" class="col-sm-3 control-label"> Phone </label>
 
-	  <div class="col-sm-4">
 
-	    <input type="text" class="form-control" id="phone" name="phone" 
 
-	    
 
-	    value="<?php echo set_value("phone"); ?>"
+							<!-- Phone Start -->
 
-	    >
+							<div class="form-group">
 
-	  </div>
+								<label for="phone" class="col-sm-3 control-label"> Telefono </label>
 
-	  <div class="col-sm-5" >
+								<div class="col-sm-4">
 
-	 
+									<input type="text" class="form-control" id="phone" name="phone" value="<?php echo set_value("phone"); ?>">
 
-	    <?php echo form_error("phone","<span class='label label-danger'>","</span>")?>
+								</div>
 
-	  </div>
+								<div class="col-sm-5">
 
-	</div> 
 
-	<!-- Phone End -->
 
+									<?php echo form_error("phone", "<span class='label label-danger'>", "</span>") ?>
 
+								</div>
 
+							</div>
 
+							<!-- Phone End -->
 
-	
-              <div class="form-group">
-                <div class="col-sm-3" >                       
-                </div>
-                <div class="col-sm-6">
-                  <button type="reset" class="btn btn-default ">Reset</button>
-                  <button type="submit" class="btn btn-info ">Submit</button>
-                </div>
-                <div class="col-sm-3" >                       
-                </div>
-              </div>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
-            </div>
-            <!-- /.box-footer -->
-          </form>
-        </div>
-        <!-- /.box -->
-        <br><br><br><br>
-      </div>
-      <!-- EO : content  -->
-      <!-- ...................................................................... -->
-    </div>
-  </div>
-</div>
+
+
+
+
+
+
+							<div class="form-group">
+
+								<div class="col-sm-3">
+
+								</div>
+
+								<div class="col-sm-6">
+
+									<button type="reset" class="btn btn-default ">Limpiar</button>
+
+									<button type="submit" class="btn btn-info ">Guardar</button>
+
+								</div>
+
+								<div class="col-sm-3">
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- /.box-body -->
+
+						<div class="box-footer">
+
+						</div>
+
+						<!-- /.box-footer -->
+
+					</form>
+
+				</div>
+
+				<!-- /.box -->
+
+				<br><br><br><br>
+
+			</div>
+
+			<!-- EO : content  -->
+
+			<!-- ...................................................................... -->
+
+		</div>
+
+	</div>
+
+</div>
+
 <?php $this->load->view('footer'); ?>
