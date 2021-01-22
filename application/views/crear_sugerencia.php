@@ -117,7 +117,7 @@
 
                 </div>
 
-                <label for="telefono" class="col-sm-3 control-label"> Telefono </label>
+                <label for="telefono" class="col-sm-3 control-label"> Teléfono </label>
 
                 <div class="col-sm-4">
 
@@ -154,7 +154,7 @@
 
                 </div>
 
-                <label for="direccion" class="col-sm-3 control-label"> Direccion </label>
+                <label for="direccion" class="col-sm-3 control-label"> Dirección </label>
 
                 <div class="col-sm-4">
 
@@ -189,7 +189,7 @@
 
                 </div>
 
-                <label class="col-sm-3 control-label">Select Tipo</label>
+                <label class="col-sm-3 control-label">Seleccione el Tipo</label>
 
                 <div class="col-sm-4">
 
@@ -248,12 +248,12 @@
 
               <!-- Creado_fecha Start -->
 
-              <div class="form-group">
+              <div class="form-group hidden">
                 <div class="col-sm-1">
 
                 </div>
 
-                <label for="creado_fecha" class="col-sm-3 control-label"> Fecha </label>
+                <label for="creado_fecha" class="col-sm-3 control-label "> Fecha </label>
 
                 <div class="col-sm-4">
 
