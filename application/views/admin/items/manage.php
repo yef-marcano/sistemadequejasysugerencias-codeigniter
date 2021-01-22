@@ -12,13 +12,13 @@
 
          <li>
 
-            <a href="<?php echo base_url() . 'admin/' ?>">Dashboard</a>
+            <a href="<?php echo base_url() . 'admin/' ?>">Inicio</a>
 
          </li>
 
          <li class="active">
 
-            <strong>Items</strong>
+            <strong>Administrar Mensajes</strong>
 
          </li>
 
@@ -70,14 +70,14 @@
 
                   <select name="searchBy" class="form-control">
 
-                     <option value="nombrecompleto" <?php echo $searchBy == "nombrecompleto" ? 'selected="selected"' : ""; ?>>Nombrecompleto</option>
+                     <option value="nombrecompleto" <?php echo $searchBy == "nombrecompleto" ? 'selected="selected"' : ""; ?>>Nombre</option>
                      <option value="telefono" <?php echo $searchBy == "telefono" ? 'selected="selected"' : ""; ?>>Telefono</option>
                      <option value="direccion" <?php echo $searchBy == "direccion" ? 'selected="selected"' : ""; ?>>Direccion</option>
                      <option value="tipo" <?php echo $searchBy == "tipo" ? 'selected="selected"' : ""; ?>>Tipo</option>
                      <option value="mensaje" <?php echo $searchBy == "mensaje" ? 'selected="selected"' : ""; ?>>Mensaje</option>
-                     <option value="fueleido" <?php echo $searchBy == "fueleido" ? 'selected="selected"' : ""; ?>>Fueleido</option>
-                     <option value="creado_fecha" <?php echo $searchBy == "creado_fecha" ? 'selected="selected"' : ""; ?>>Creado_fecha</option>
-                     <option value="departamento.nombre" <?php echo $searchBy == "departamento.nombre" ? 'selected="selected"' : ""; ?>>Departamento_id</option>
+                     <option value="fueleido" <?php echo $searchBy == "fueleido" ? 'selected="selected"' : ""; ?>>Estado</option>
+                     <option value="creado_fecha" <?php echo $searchBy == "creado_fecha" ? 'selected="selected"' : ""; ?>>Fecha</option>
+                     <option value="departamento.nombre" <?php echo $searchBy == "departamento.nombre" ? 'selected="selected"' : ""; ?>>Departamento</option>
 
                   </select>
 
@@ -131,7 +131,7 @@
 
                         <?php $symbol = isset($_GET["sortBy"]) && $_GET["sortBy"] == "nombrecompleto" ? "<i class='fa fa-sort-$sortSym' aria-hidden='true'></i>" : "<i class='fa fa-sort' aria-hidden='true'></i>"; ?>
 
-                        <th> <a href="<?php echo $fields_links["nombrecompleto"]; ?>" class="link_css"> Nombrecompleto <?php echo $symbol ?></a></th>
+                        <th> <a href="<?php echo $fields_links["nombrecompleto"]; ?>" class="link_css"> Nombre <?php echo $symbol ?></a></th>
 
 
 
