@@ -12,38 +12,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('http://localhost/accets/fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('http://localhost/accets/fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-SemiBold;
-  src: url('http://localhost/accets/fonts/poppins/Poppins-SemiBold.ttf'); 
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('http://localhost/accets/fonts/montserrat/'Open Sans'.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-SemiBold;
-  src: url('http://localhost/accets/fonts/montserrat/Montserrat-SemiBold.ttf'); 
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('http://localhost/accets/fonts/montserrat/'Open Sans'.ttf'); 
-}
-
-
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
@@ -624,5 +592,5 @@ input.input100 {
 
 
 .bg-login {
-  background-image: linear-gradient(0deg, rgb(0 8 255 / 30%), rgb(39 0 255 / 30%)), url(http://localhost/sistemadequejasysugerencias/uploads/photo/bg-01.jpg)
+  background-image: linear-gradient(0deg, rgb(0 8 255 / 30%), rgb(39 0 255 / 30%)), url(../../../uploads/photo/bg-01.jpg)
 }
